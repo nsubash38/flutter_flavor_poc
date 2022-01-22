@@ -57,6 +57,23 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "flavor-type"
+
+    productFlavors {
+        gs31{
+            dimension "flavor-type"
+            applicationIdSuffix ".gs31"
+            versionNameSuffix "-gs31"
+            manifestPlaceholders = [appName: "GS31"]
+        }
+        yt47{
+            dimension "flavor-type"
+            applicationIdSuffix ".yt47"
+            versionNameSuffix "-yt47"
+            manifestPlaceholders = [appName: "YT47"]
+        }
+    }
 }
 
 flutter {
