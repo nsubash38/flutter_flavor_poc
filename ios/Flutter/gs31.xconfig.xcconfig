@@ -7,3 +7,10 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+
+#include "Generated.xcconfig"
+BUNDLE_ID_SUFFIX=.gs31
+PRODUCT_BUNDLE_IDENTIFIER=easysoft.com.easycoopay.gs31
+FLUTTER_TARGET=lib/main_files/main_gs31.dart
+APP_NAME=Flavor GS31

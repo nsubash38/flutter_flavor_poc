@@ -65,13 +65,15 @@ android {
             dimension "flavor-type"
             applicationIdSuffix ".gs31"
             versionNameSuffix "-gs31"
-            manifestPlaceholders = [appName: "GS31"]
+            manifestPlaceholders = [appName: "GS31"] // optional 
+            resValue "string", "app_name", "GS31"
         }
         yt47{
             dimension "flavor-type"
             applicationIdSuffix ".yt47"
             versionNameSuffix "-yt47"
             manifestPlaceholders = [appName: "YT47"]
+            resValue "string", "app_name", "YT47"
         }
     }
 }

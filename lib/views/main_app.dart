@@ -23,9 +23,19 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       theme: state.theme,
       home: Scaffold(
+        backgroundColor: state.theme.primaryColor,
+        appBar: AppBar(
+          title: Text(
+            "${state.flavorConfig.mySecretCode}",
+            style: Theme.of(context).primaryTextTheme.headline6,
+          ),
+        ),
         body: SafeArea(
             child: Center(
-          child: Text("myConfig ${state.flavorConfig.mySecretCode}"),
+          child: Text(
+            "myConfig ${state.flavorConfig.mySecretCode}",
+            style: Theme.of(context).textTheme.headline1,
+          ),
         )),
       ),
     );
